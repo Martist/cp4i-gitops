@@ -1,6 +1,0 @@
-resources:
-  - qm-alpha.ConfigMap.yaml
-  - qm-alpha.QueueManager.yaml
-
-
-
