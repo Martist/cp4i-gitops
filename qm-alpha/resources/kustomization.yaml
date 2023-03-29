@@ -5,4 +5,4 @@ resources:
   - qm-alpha.ConfigMap.yaml
   - qm-alpha.QueueManager.yaml
 commonAnnotations:
-  qm-alpha/version: v0.1
+  qm-alpha/version: v0.2
