@@ -1,7 +1,7 @@
 apiVersion: mq.ibm.com/v1beta1
 kind: QueueManager
 metadata:
-  name: myqm
+  name: qm-alpha
   annotations:
     com.ibm.mq/write-defaults-spec: 'false'
   namespace: cp4i
@@ -22,9 +22,9 @@ spec:
   queueManager:
     mqsc:
       - configMap:
-          name: myqm-config
+          name: qm-alpha-mqsc
           items:
-            - myqm.mqsc
+            - qm-alpha.mqsc
     resources:
       limits:
         cpu: 500m

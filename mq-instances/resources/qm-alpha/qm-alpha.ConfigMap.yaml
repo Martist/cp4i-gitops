@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: qm-alpha-mqsc
+data:
+  qm-alpha.mqsc: |
+    DEFINE QLOCAL('ALPHA.QUEUE1') DEFPSIST(YES) REPLACE
