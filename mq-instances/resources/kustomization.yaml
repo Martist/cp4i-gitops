@@ -1,5 +1,5 @@
 resources:
-- myqm/myqm.yaml
+#- myqm/myqm.yaml
 #- new-qm.yaml
 #- config-map/new-queue-cm.yaml
 #- config-map/test-queue1-cm.yaml
