@@ -15,4 +15,4 @@ configMapGenerator:
 
 # Include these resources
 resources:
-  - myqm.yaml
+  - myqm.QueueManager.yaml
