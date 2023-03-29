@@ -9,7 +9,7 @@ spec:
   project: cp4i
   source:
     repoURL: https://github.com/Martist/cp4i-gitops.git
-    path: mq-instances/resources/myqm
+    path: myqm/resources
     targetRevision: main
   syncPolicy:
     automated:
