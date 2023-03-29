@@ -1,6 +1,6 @@
 resources:
-- myqm.yaml
-- qm-alpha.yaml
+  - myqm.yaml
+  - qm-alpha.yaml
 #- new-qm.yaml
 #- config-map/new-queue-cm.yaml
 #- config-map/test-queue1-cm.yaml

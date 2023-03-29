@@ -2,8 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: myqm
-  annotations:
-    argocd.argoproj.io/sync-wave: "400"
 spec:
   destination:
     namespace: cp4i
