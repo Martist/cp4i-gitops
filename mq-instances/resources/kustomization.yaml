@@ -1,8 +1,0 @@
-resources:
-#  - myqm.yaml
-  - qm-alpha.yaml
-#- new-qm.yaml
-#- config-map/new-queue-cm.yaml
-#- config-map/test-queue1-cm.yaml
-#- config-map/test-queue2-cm.yaml
-#- config-map/test-queue3-cm.yaml
