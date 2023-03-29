@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: service-requests
+  name: mq-instances
   annotations:
     argocd.argoproj.io/sync-wave: "200"
 spec:
@@ -11,7 +11,7 @@ spec:
   project: cp4i
   source:
     repoURL: https://github.com/Martist/cp4i-gitops.git
-    path: service-requests/resources
+    path: mq-instances/resources
     targetRevision: main
   syncPolicy:
     automated:

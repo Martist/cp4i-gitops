@@ -2,4 +2,4 @@ resources:
   - namespaces/namespaces.yaml
   - operators/operators.yaml
   - operands/operands.yaml
-#  - service-requests/service-requests.yaml
+#  - mq-instances/mq-instances.yaml
