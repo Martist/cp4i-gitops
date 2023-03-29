@@ -6,10 +6,8 @@ rules:
   - verbs:
       - '*'
     apiGroups:
-      - apiconnect.ibm.com
       - integration.ibm.com
       - mq.ibm.com
-      - appconnect.ibm.com
       - cert-manager.io
       - tekton.dev
       - build.openshift.io

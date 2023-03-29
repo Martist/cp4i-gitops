@@ -1,7 +1,0 @@
-- op: add       
-  path: /spec/queueManager/mqsc/-
-  value:
-    configMap:
-      name: test-queue3-configmap
-      items:
-        - tls.mqsc
