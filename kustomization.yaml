@@ -3,4 +3,4 @@ resources:
   - operators/operators.yaml
   - operands/operands.yaml
   - mq-instances/mq-instances.yaml
-  - mymq/mymq.yaml
+  - myqm/myqm.yaml
