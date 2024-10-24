@@ -7,9 +7,9 @@ metadata:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: cp4i
+    namespace: mq
     server: https://kubernetes.default.svc
-  project: cp4i
+  project: mq
   source:
     repoURL: https://github.com/Martist/cp4i-gitops.git 
     path: namespaces/resources
