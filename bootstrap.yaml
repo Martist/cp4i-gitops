@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: cp4i
+  name: mq
   namespace: openshift-gitops
 spec:
   clusterResourceWhitelist:
@@ -22,7 +22,7 @@ spec:
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
-  project: cp4i
+  project: mq
   source:
     path: ./
     repoURL: https://github.com/Martist/cp4i-gitops.git

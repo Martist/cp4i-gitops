@@ -4,7 +4,7 @@ metadata:
   name: qm-alpha
   annotations:
     com.ibm.mq/write-defaults-spec: 'false'
-  namespace: cp4i
+  namespace: mq
 spec:
   license:
     accept: true
