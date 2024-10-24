@@ -1,5 +1,5 @@
 resources:
-  #- namespaces/namespaces.yaml
+  - namespaces/namespaces.yaml
   #- operators/operators.yaml
   #- operands/operands.yaml
   #- myqm/myqm.yaml
