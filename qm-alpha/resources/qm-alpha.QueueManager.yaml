@@ -3,7 +3,6 @@ kind: QueueManager
 metadata:
   name: qm-alpha
   annotations:
-    qm-alpha/version: v2.0
     com.ibm.mq/write-defaults-spec: 'false'
   namespace: mq
 spec:
