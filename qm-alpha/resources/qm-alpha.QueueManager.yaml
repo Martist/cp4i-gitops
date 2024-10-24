@@ -12,6 +12,14 @@ spec:
     use: Production
   web:
     enabled: true
+    console:
+      authentication:
+        provider: manual
+      authorization:
+        provider: manual
+    manualConfig:
+      configMap:
+        name: mqwebuserconfigmap
   template:
     pod:
       containers:
