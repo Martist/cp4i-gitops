@@ -1,0 +1,38 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: qm-beta
+  annotations:
+    com.ibm.mq/write-defaults-spec: 'false'
+  namespace: mq
+spec:
+  license:
+    accept: true
+    license: L-EHXT-MQCRN9
+    use: Production
+  web:
+    enabled: true
+  template:
+    pod:
+      containers:
+        - env:
+            - name: MQSNOAUT
+              value: 'yes'
+          name: qmgr
+  queueManager:
+    mqsc:
+      - configMap:
+          name: qm-beta-mqsc
+          items:
+            - qm-beta.mqsc
+    resources:
+      limits:
+        cpu: 500m
+      requests:
+        cpu: 500m
+    availability:
+      type: NativeHA
+    storage:
+      queueManager:
+        type: persistent-claim
+  version: 9.4.0.5-r2

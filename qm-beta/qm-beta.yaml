@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: qm-beta
+  namespace:
+spec:
+  destination:
+    namespace: mq
+    server: https://kubernetes.default.svc
+  project: mq
+  source:
+    repoURL: https://github.com/Martist/cp4i-gitops.git
+    path: qm-beta/resources
+    targetRevision: mq-setup
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
