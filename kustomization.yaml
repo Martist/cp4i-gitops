@@ -1,9 +1,9 @@
 resources:
-  - namespaces/namespaces.yaml
+  #- namespaces/namespaces.yaml
   #- operators/operators.yaml
   #- operands/operands.yaml
   #- myqm/myqm.yaml
+  #- service-requests/service-requests.yaml
   - qm-alpha/qm-alpha.yaml
   - qm-beta/qm-beta.yaml
-  #- service-requests/service-requests.yaml
   

@@ -6,7 +6,6 @@ rules:
   - verbs:
       - '*'
     apiGroups:
-      - integration.ibm.com
       - mq.ibm.com
       - cert-manager.io
       - tekton.dev
