@@ -8,8 +8,8 @@ metadata:
 spec:
   license:
     accept: true
-    license: L-RJON-CJR2RX
-    use: NonProduction
+    license: L-EHXT-MQCRN9
+    use: Production
   web:
     enabled: true
   template:
