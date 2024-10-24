@@ -13,7 +13,7 @@ spec:
   source:
     repoURL: https://github.com/Martist/cp4i-gitops.git 
     path: namespaces/resources
-    targetRevision: main
+    targetRevision: mq-setup
   syncPolicy:
     automated:
       prune: false
