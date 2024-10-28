@@ -18,7 +18,7 @@ data:
     *
     *setup LDAP
     * 
-    DEFINE AUTHINFO(USE.LDAP) AUTHTYPE(IDPWLDAP) ADOPTCTX(YES) CONNAME('ldap-service.mq-ldap.svc.cluster.local(389)') CHCKCLNT(REQUIRED) CLASSGRP('groupOfUniqueNames') CLASSUSR('inetOrgPerson') FINDGRP('uniquemember') BASEDNG('ou=Groups,dc=local,dc=io') BASEDNU('ou=People,dc=local,dc=io') LDAPUSER('cn=admin,dc=local,dc=io') LDAPPWD('admin') SHORTUSR('sn') GRPFIELD('cn') USRFIELD('cn') AUTHORMD(SEARCHGRP) NESTGRP(YES)
+    DEFINE AUTHINFO(USE.LDAP) AUTHTYPE(IDPWLDAP) ADOPTCTX(YES) CONNAME('ldap-service.mq-ldap.svc.cluster.local(389)') CHCKCLNT(REQUIRED) CHCKLOCL(REQUIRED) CLASSGRP('groupOfUniqueNames') CLASSUSR('inetOrgPerson') FINDGRP('uniquemember') BASEDNG('ou=Groups,dc=local,dc=io') BASEDNU('ou=People,dc=local,dc=io') LDAPUSER('cn=admin,dc=local,dc=io') LDAPPWD('admin') SHORTUSR('sn') GRPFIELD('cn') USRFIELD('cn') AUTHORMD(SEARCHGRP) NESTGRP(YES)
     ALTER QMGR CONNAUTH(USE.LDAP)
     REFRESH SECURITY TYPE(CONNAUTH)
 
