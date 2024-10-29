@@ -24,8 +24,6 @@ spec:
     pod:
       containers:
         - env:
-            - name: MQSNOAUT
-              value: 'yes'
           name: qmgr
   queueManager:
     mqsc:
