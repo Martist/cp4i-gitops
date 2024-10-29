@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: mq
 resources:
-  - qm-alpha.ConfigMap.yaml
-  - qm-alpha.QueueManager.yaml
+  - qm-alfa.ConfigMap.yaml
+  - qm-alfa.QueueManager.yaml
 commonAnnotations:
   qm-alpha/version: v4.5

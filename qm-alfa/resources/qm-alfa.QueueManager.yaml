@@ -1,7 +1,7 @@
 apiVersion: mq.ibm.com/v1beta1
 kind: QueueManager
 metadata:
-  name: qm-alpha
+  name: qm-alfa
   annotations:
     com.ibm.mq/write-defaults-spec: 'false'
   namespace: mq
@@ -28,9 +28,9 @@ spec:
   queueManager:
     mqsc:
       - configMap:
-          name: qm-alpha-mqsc
+          name: qm-alfa-mqsc
           items:
-            - qm-alpha.mqsc
+            - qm-alfa.mqsc
     resources:
       limits:
         cpu: 500m

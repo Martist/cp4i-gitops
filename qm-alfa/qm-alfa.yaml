@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: qm-alpha
+  name: qm-alfa
   namespace:
 spec:
   destination:
@@ -10,7 +10,7 @@ spec:
   project: mq
   source:
     repoURL: https://github.com/Martist/cp4i-gitops.git
-    path: qm-alpha/resources
+    path: qm-alfa/resources
     targetRevision: mq-setup
   syncPolicy:
     automated:
