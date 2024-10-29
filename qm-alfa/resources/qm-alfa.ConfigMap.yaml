@@ -15,9 +15,10 @@ data:
     *
     DEFINE CHANNEL(KAFKA.SVRCONN) CHLTYPE(SVRCONN) TRPTYPE(TCP) SSLCAUTH(OPTIONAL) REPLACE
     SET CHLAUTH(KAFKA.SVRCONN) TYPE(BLOCKUSER) USERLIST('nobody') ACTION(ADD)
+    SET AUTHREC PROFILE('self') PRINCIPAL('guest') OBJTYPE(QMGR) AUTHADD(CONNECT,DSP,INQ) 
     *
     *setup LDAP
     * 
-    DEFINE AUTHINFO(USE.LDAP) AUTHTYPE(IDPWLDAP) ADOPTCTX(YES) CONNAME('ldap-service.mq-ldap.svc.cluster.local(389)') CHCKCLNT(REQUIRED) CLASSGRP('groupOfUniqueNames') CLASSUSR('inetOrgPerson') FINDGRP('uniquemember') BASEDNG('ou=Groups,dc=local,dc=io') BASEDNU('ou=People,dc=local,dc=io') LDAPUSER('cn=admin,dc=local,dc=io') LDAPPWD('admin') SHORTUSR('sn') GRPFIELD('cn') USRFIELD('cn') AUTHORMD(SEARCHGRP) NESTGRP(YES)
+    DEFINE AUTHINFO(USE.LDAP) AUTHTYPE(IDPWLDAP) ADOPTCTX(YES) CONNAME('ldap-service.mq-ldap.svc.cluster.local(389)') CHCKCLNT(REQUIRED) CLASSGRP('groupOfUniqueNames') CLASSUSR('inetOrgPerson') FINDGRP('uniquemember') BASEDNG('ou=Groups,dc=local,dc=io') BASEDNU('ou=People,dc=local,dc=io') LDAPUSER('cn=admin,dc=local,dc=io') LDAPPWD('admin') SHORTUSR('sn') GRPFIELD('cn') USRFIELD('cn') AUTHORMD(SEARCHGRP) NESTGRP(YES) REPLACE
     ALTER QMGR CONNAUTH(USE.LDAP)
     REFRESH SECURITY TYPE(CONNAUTH)
