@@ -4,6 +4,6 @@ resources:
   #- operands/operands.yaml
   #- myqm/myqm.yaml
   #- service-requests/service-requests.yaml
-  #- qm-alpha/qm-alpha.yaml
+  - qm-alpha/qm-alpha.yaml
   - qm-beta/qm-beta.yaml
   
