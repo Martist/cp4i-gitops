@@ -30,8 +30,6 @@ spec:
         cpu: 500m
       requests:
         cpu: 500m
-    availability:
-      type: NativeHA
     storage:
       queueManager:
         type: persistent-claim
